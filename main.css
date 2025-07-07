@@ -1,0 +1,175 @@
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: cursive;
+}
+
+/* Header Styling */
+header {
+  background-color: #E64398;
+  color: #F0EBF4;
+  padding: 5px 0;
+  text-align: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-container img {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.logo-container h1 {
+  margin: 0;
+}
+
+/* Navigation Styling */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #9e379a;
+}
+
+/* Banner Styling */
+.banner img {
+  width: 100%;
+  height: auto;
+  opacity: 0.5;
+}
+
+.banner h2 {
+  color: #F172A1;
+  font-family: cursive;
+  padding: 5px;
+}
+
+/* Featured Attractions Styling */
+.features {
+  padding: 10px;
+  background-color: #f4f4f4;
+}
+
+.features h3 {
+  font-family: cursive;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.box-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.box {
+  padding: 20px;
+  background-color: rgb(250, 225, 225);
+  color: black;
+  text-align: center;
+  flex: 1;
+  min-width: 250px;
+  box-shadow: 2px 2px 5px rgba(160, 34, 34, 0.2);
+}
+
+.box h4 {
+  font-size: 1.2em;
+  margin-top: 0;
+}
+
+.box p {
+  font-size: 0.9em;
+  margin-bottom: 0;
+}
+
+.box img {
+  width: 100%;
+  height: auto;
+  max-width: 150px;
+  display: block;
+  margin: auto;
+}
+
+/* Main Content Links Styling */
+.main-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 40px 20px;
+}
+
+.main-links div {
+  background-color: #A1C3D1;
+  color: #F0EBF4;
+  width: 30%;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.main-links h3 {
+  margin-bottom: 10px;
+}
+
+.main-links a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  color: #ECECEC;
+  border: 1px solid #ECECEC;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.main-links a:hover {
+  color: #60adcd;
+}
+
+/* Footer Styling */
+footer {
+  font-family: cursive;
+  font-size: small;
+  background-color: #ECECEC;
+  color: #36155e;
+  text-align: center;
+  padding: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .box-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+}

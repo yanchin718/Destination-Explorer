@@ -1,0 +1,169 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: cursive;
+  background-color: #ffffff;
+}
+
+/* Header styling */
+header {
+  background-color: #E64398;
+  color: #F0EBF4;
+  padding: 5px 0;
+  text-align: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-container img {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.logo-container h1 {
+  margin: 0;
+}
+
+/* Navigation styling */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #9e379a;
+}
+
+.banner h1{
+  padding: 5px;
+}
+
+/* grid container */
+.holy-grail-grid {
+  display: grid;
+  grid-template-areas:
+    'Asia'
+    'Europe'
+    'North-America'
+    'South-America'
+    'Africa'
+    'Oceania'
+    'Antarctica';
+}
+
+/* general column padding */
+.holy-grail-grid > * {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* assign columns to grid areas */
+.holy-grail-grid > .Asia {
+  grid-area: Asia;
+  background: hsl(0, 100%, 75%);
+}
+
+.holy-grail-grid > .Europe {
+  grid-area: Europe;
+  background: hsl(28, 100%, 75%);
+}
+
+.holy-grail-grid > .North-America {
+  grid-area: North-America;
+  background: hsl(60, 100%, 75%);
+}
+
+.holy-grail-grid > .South-America {
+  grid-area: South-America;
+  background: hsl(111, 92%, 75%);
+}
+
+.holy-grail-grid > .Africa {
+  grid-area: Africa;
+  background: hsl(179, 100%, 75%);
+}
+
+.holy-grail-grid > .Oceania {
+  grid-area: Oceania;
+  background: hsl(224, 100%, 75%);
+}
+
+.holy-grail-grid > .Antarctica {
+  grid-area: Antarctica;
+  background: hsl(273, 100%, 75%);
+}
+
+/* tablet breakpoint */
+@media (min-width: 768px) {
+  .holy-grail-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      'Asia Asia'
+      'Europe North-America'
+      'South-America South-America'
+      'Africa Oceania'
+      'Antarctica Antarctica';
+  }
+}
+
+/* desktop breakpoint */
+@media (min-width: 1024px) {
+  .holy-grail-grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      'Asia Asia Asia Asia'
+      'North-America Europe Europe South-America'
+      'Africa Africa Oceania Oceania'
+      'Antarctica Antarctica Antarctica Antarctica';
+  }
+}
+
+html {
+  font-size: calc(15px + 0.390625vw);
+}
+
+/* Footer styling */
+footer {
+  font-family: cursive;
+  font-size: small;
+  background-color: #ECECEC;
+  color: #36155e;
+  text-align: center;
+  padding: 5px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .box-container {
+      flex-direction: column;
+      gap: 20px;
+  }
+
+  nav ul {
+      flex-direction: column;
+  }
+
+  nav ul li {
+      margin: 10px 0;
+  }
+}
