@@ -17,4 +17,5 @@ It was developed as part of an individual assignment during my Diploma in Comput
 <img width="1004" height="894" alt="image" src="https://github.com/user-attachments/assets/98996fa5-ca08-4131-bb2b-487cddd5097e" />
 
 
-## 🚀 How to Use
+## 🚀 How can u see the page?
+Open this link ------ https://yanchin718.github.io/Destination-Explorer/
